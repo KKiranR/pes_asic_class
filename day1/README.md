@@ -134,4 +134,5 @@ int main(){
 ```
 The following output after running the following program
 
-![](https://hackmd.io/_uploads/rJkAvPJpn.png)
+![Screenshot from 2023-08-20 15-45-30](https://github.com/KKiranR/pes_asic_class/assets/89727621/e8f202b5-2572-4809-81ef-265db3776e0a)
+
