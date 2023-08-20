@@ -73,8 +73,7 @@ int main(){
 }
 ```
 
-![](https://hackmd.io/_uploads/BJrS7D163.png)
-
+![Screenshot from 2023-08-20 15-25-23](https://github.com/KKiranR/pes_asic_class/assets/89727621/efce9e88-3c39-4333-92bf-50ba933cb0bc)
 
 ## RISCV GCC Compiler and Dissemble
 Run the below command for the RISCV gcc Compiler 
@@ -87,7 +86,8 @@ spike pk sum1ton.o
 ```
 Spike simulator opens which will be hardware simulator this will give you the same output as with gcc compiler 
 
-![](https://hackmd.io/_uploads/By-8VPka2.png)
+![Screenshot from 2023-08-20 15-30-39](https://github.com/KKiranR/pes_asic_class/assets/89727621/7b5b1690-0841-4b37-adee-476bfc23172b)
+
 
 To view the dissambled form of the object file use the following command in new terminal window
 ```
@@ -96,7 +96,9 @@ riscv64-unknown-elf-objdump -d sum1ton.o | less
 
 This gives us the dissambled form of the object file created by the risc-v gcc complier
 
-![](https://hackmd.io/_uploads/r1Q4Bw1pn.png)
+
+![Screenshot from 2023-08-20 15-34-23](https://github.com/KKiranR/pes_asic_class/assets/89727621/969798eb-224a-440c-8b38-0ebcebe9c167)
+
 
 For debugging the file object file in spike simulator the following command is used
 ``` bash
@@ -104,7 +106,8 @@ spike -d pk sum1ton.c
 ```
 Register contents can be checked also
 
-![](https://hackmd.io/_uploads/rkRoUw1ph.png)
+![Screenshot from 2023-08-20 15-40-06](https://github.com/KKiranR/pes_asic_class/assets/89727621/249ff26a-e1fd-475c-b40b-a105c81a453c)
+
 
 ## Integer Number Representation 
 
