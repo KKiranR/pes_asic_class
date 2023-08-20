@@ -2,19 +2,18 @@
 ## DAY 1 
 **Introduction to RISCV ISA and GNU Compiler Toolchain**
 + Introduction to Basic Keywords
-  - [Introduction](#introduction)
-  - [From Apps to Hardware](#from-apps-to-hardware)
-  - [Detail Description of Course Content](#detail-description-of-course-content)
+  - Introduction
+  - From Apps to Hardware
 
 + Labwork for RISCV Toolchain
-  - [C Program](#c-program)
-  - [RISCV GCC Compiler and Dissemble](#riscv-gcc-compiler-and-dissemble)
-  - [Spike Simulation and Debug](#spike-simulation-and-debug)
+  - C Program
+  - RISCV GCC Compiler and Dissemble
+  - spike simulation and debug
 
 + Integer Number Representation  
-  - [64-bit Unsigned Numbers](#64-bit-unsigned-numbers)
-  - [64-bit Signed Numbers](#64-bit-signed-numbers)
-  - [Labwork For Signed and Unsigned Numbers](#labwork-for-signed-and-unsigned-numbers)
+  - 64-bit Unsigned Numbers
+  - 64-bit Signed Numbers
+  - Labwork For Signed and Unsigned Numbers
 # Introduction to Basic Keywords
 ## Introduction
 - **ISA (Instruction Set Archhitecture)**
@@ -56,3 +55,80 @@
 **Memory Allocation and Stack Pointer** 
 - Memory allocation refers to the process of assigning and managing memory segments for various data structures, variables, and objects used by a program. It involves allocating memory space from the system's memory pool and releasing it when it is no longer needed to prevent memory leaks.
 - The stack pointer is a register used by a program to keep track of the current position of the program's execution on the call stack. 
+# Lab-1
+## C Program
+We wrote a C program for calculating the sum from 1 to n using a text editor, leafpad.
+
+`leafpad sumton.c`
+``` c
+#include<stdio.h>
+
+int main(){
+	int i, sum=0, n=5;
+	for (i=1;i<=n; ++i) {
+	sum +=i;
+	}
+	printf("Sum of numbers from 1 to %d is %d \n",n,sum);
+	return 0;
+}
+```
+
+![](https://hackmd.io/_uploads/BJrS7D163.png)
+
+
+## RISCV GCC Compiler and Dissemble
+Run the below command for the RISCV gcc Compiler 
+```
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
+run the spike simulator using command 
+```
+spike pk sum1ton.o
+```
+Spike simulator opens which will be hardware simulator this will give you the same output as with gcc compiler 
+
+![](https://hackmd.io/_uploads/By-8VPka2.png)
+
+To view the dissambled form of the object file use the following command in new terminal window
+```
+riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+
+This gives us the dissambled form of the object file created by the risc-v gcc complier
+
+![](https://hackmd.io/_uploads/r1Q4Bw1pn.png)
+
+For debugging the file object file in spike simulator the following command is used
+``` bash
+spike -d pk sum1ton.c
+```
+Register contents can be checked also
+
+![](https://hackmd.io/_uploads/rkRoUw1ph.png)
+
+## Integer Number Representation 
+
+### Unsigned Numbers
+- Unsigned numbers, also known as non-negative numbers, are numerical values that represent magnitudes without indicating direction or sign.
+- Range: [0, (2^n)-1 ]
+
+### Signed Numbers
+- Signed numbers are numerical values that can represent both positive and negative magnitudes, along with zero.
+- Range : Positive : [0 , 2^(n-1)-1]
+          Negative : [-1 to 2^(n-1)]
+## Lab 2
+``` c
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	unsigned long long int max = (unsigned long long int) (pow(2,64) -1);
+	unsigned long long int min = (unsigned long long int) (pow(2,64) *(-1));
+	printf("lowest number represented by unsigned 64-bit integer is %llu\n",min);
+	printf("highest number represented by unsigned 64-bit integer is %llu\n",max);
+	return 0;
+}
+```
+The following output after running the following program
+
+![](https://hackmd.io/_uploads/rJkAvPJpn.png)
