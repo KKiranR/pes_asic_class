@@ -21,26 +21,26 @@
 - Supports better scalability for large, complex designs.
 #### Steps to Hierarchical Synthesis
 Enter the following commands to run Hierarchial Synthesis
-**1.**```read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib  ```
-**2.**```read_verilog multiple_modules.v```
-**3.**```synth -top multiple_modules```
-**5.**```abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
-**6.**```show multiple_modules```
-**7.**```write_verilog -noattr multiple_modules_hier.v```
+- **1.**```read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib  ```
+- **2.**```read_verilog multiple_modules.v```
+- **3.**```synth -top multiple_modules```
+- **5.**```abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+- **6.**```show multiple_modules```
+- **7.**```write_verilog -noattr multiple_modules_hier.v```
 #### Output of Hiererchical Synthesis
-![](https://hackmd.io/_uploads/HJZa_5_6h.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/f1f6d875-5e63-4930-9bd3-2701bfbfd150)
 #### Flat Synthesis
 Enter the following commands to run flat Synthesis
-**1.**```read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib  ```
-**2.**```read_verilog multiple_modules.v```
-**3.**```synth -top multiple_modules```
-**5.**```abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
-**6.**```flatten```
-**7.**```show multiple_modules```
-**8.**```write_verilog -noattr multiple_modules_hier.v```
-**9.**```!gvim multiple_modules_hier.v```
+- **1.**```read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib  ```
+- **2.**```read_verilog multiple_modules.v```
+- **3.**```synth -top multiple_modules```
+- **5.**```abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+- **6.**```flatten```
+- **7.**```show multiple_modules```
+- **8.**```write_verilog -noattr multiple_modules_hier.v```
+- **9.**```!gvim multiple_modules_hier.v```
 #### Output of Flat Synthesis 
-![](https://hackmd.io/_uploads/ByfHFqOph.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/6f23e1ed-a7d1-4888-ad05-8e52b994ac35)
 ## Various Flop Coding Styles and Optimization
 ### Flop Coding Styles
 #### Asynchronous Reset D Flip-Flop
@@ -61,36 +61,36 @@ Enter the following commands to run flat Synthesis
 ### Synthesis and Simulation of Flops
 #### Asynchronous Reset D Flip-Flop
 ##### Simulation
-![](https://hackmd.io/_uploads/HJQXaquT2.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/0755fdd9-fe56-411e-9c00-a9f739ccaa44)
 ##### WaveForm 
-![](https://hackmd.io/_uploads/SJ0469_ph.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/acb6892a-2530-415d-b92f-8d51b9da93ec)
 ##### Synthesis
-![](https://hackmd.io/_uploads/SyEpT5_ah.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/ee48b3c2-0933-48f4-bfd4-a7d9abb5c72e)
 #### Asynchronous set D Flip-Flop
 ##### Simulation
-![](https://hackmd.io/_uploads/r1U9A5Opn.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/2be5e071-39f3-4bb1-b8fb-29b3193ee45b)
 ##### WaveForm
-![](https://hackmd.io/_uploads/BkOKR5ua3.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/2272b536-b9ae-439f-9964-507b5cab9638)
 ##### Synthesis
-![](https://hackmd.io/_uploads/B1MyyiOah.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/c63601d2-cc9e-4d69-a1ad-30b6bbd28946)
 #### Asynchronous Reset D Flip-Flop
 ##### Simulation
-![](https://hackmd.io/_uploads/ryOckiOTh.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/190f5ec6-292a-4f16-8b08-4da3ff7391d4)
 ##### WaveForm
-![](https://hackmd.io/_uploads/Hkoxeju63.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/9636aae8-b57a-4030-acba-4797926ec039)
 ##### Synthesis
-![](https://hackmd.io/_uploads/BJcyxiOpn.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/409b22a7-c008-46aa-aac2-33f532e1691f)
 ### Interesting Optimisations
 #### Mul_2
 ##### Synthesis
-![](https://hackmd.io/_uploads/H1frWsOp3.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/e1790bd3-8fba-440a-887f-edb026776b75)
 ##### Schematic
-![](https://hackmd.io/_uploads/H138bj_ph.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/fd92356c-6094-4f27-b017-e29d446e74c2)
 #### Mul_8
 ##### Synthesis
-![](https://hackmd.io/_uploads/rkPUGsOTh.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/b1c3ae7b-891f-49f5-85be-1ff3a19c263d)
 ##### Schematic
-![](https://hackmd.io/_uploads/BkXDfju63.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/8c0cef16-7af6-498d-be90-7d6bc167089e)
 
 
 ##### * All the codes and output netlist are available in the files 
