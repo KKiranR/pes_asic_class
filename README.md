@@ -24,3 +24,4 @@ Then gedit will open then add the following line at the end of the file
 ```
 export PATH=<your installation directory>/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 ```
+## [Day1](https://github.com/KKiranR/pes_asic_class/tree/main/day1)
