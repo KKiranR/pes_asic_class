@@ -30,16 +30,16 @@ abc -liberty <library file name >
 show
 ```
 ##### 1.opt_check:
-![](https://hackmd.io/_uploads/HJled8jph.png)
-![](https://hackmd.io/_uploads/SyOB_Lip3.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/1788c767-af26-473b-bfc8-2d5fa1836596)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/642fd96c-5a00-490e-bf41-98c8573c7419)
 ##### 2.opt_check2:
-![](https://hackmd.io/_uploads/ryW2O8spn.png)
-![](https://hackmd.io/_uploads/HJdY_8o63.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/e8f94de8-1fe2-4146-9ac2-6458d67fcf00)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/1d5cdf5e-6155-41bd-959f-e4e02ae7b914)
 ##### 3.opt_check3:
-![](https://hackmd.io/_uploads/B1D0uIoa3.png)
+![image](https://github.com/KKiranR/pes_asic_class/assets/89727621/f0f2fe7e-17c5-4522-802c-e66d59764e37)
 ![](https://hackmd.io/_uploads/SJorFIs62.png)
 ##### 4.opt_check4:
-![](https://hackmd.io/_uploads/HJ-cqIipn.png)
+![image](https://hackmd.io/_uploads/HJ-cqIipn.png)
 ![](https://hackmd.io/_uploads/SyQ2cLi6n.png)
 ##### 5.Multiple_module_opt:
 ![](https://hackmd.io/_uploads/BJwqi8sph.png)![](https://hackmd.io/_uploads/B13x28oa3.png)
